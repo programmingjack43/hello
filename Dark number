@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class dark{ // It is a number which has a zero in its digits 😂😊
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter a number to be checked");
+        int num=sc.nextInt(); int c=0;
+        while(num>0){
+            int rem=num%1;
+            num=num/10;
+            if(rem==0){
+                c++;
+                break;
+            }
+        }if(c!=0)
+        System.out.println("yes");
+        else
+        System.out.println("No");
+        
+    }
+}
